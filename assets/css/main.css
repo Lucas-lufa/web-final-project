@@ -1,0 +1,51 @@
+/* colour scheme
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+.bg-colour--{
+  background-color: var();
+}
+
+/*white  255, 255, 255  #ffffff */
+/*black  0, 0, 0  #000000*/
+/*Aquamarine  127, 255, 253  #7FFFD4*/
+/*‍Dark Green Moss  62, 86, 34  #3E5622*/
+/*‍Persian Orange  202, 137, 95  #CA895F*/
+/*‍Redwood  161, 94, 23  #A15E49*/
+
+:root{
+    --oneLight: #7FFFD4;
+    --oneDark: #1d2910;
+    --twoLight: #CA895F;
+    --twoDark: #9d011e;
+  }
+  
+  .bg-colour-light1{
+    background-color: var(--oneLight);
+  }
+  
+  .bg-colour-light2{
+    background-color: var(--twoLight);
+  }
+  
+  .bg-colour-dark1{
+    background-color: var(--oneDark);
+  }
+  
+  .bg-colour-dark2{
+    background-color: var(--twoDark);
+  }
+  
+  .colour-light1{
+    background-color: var(--oneLight);
+  }
+  
+  .colour-light2{
+    background-color: var(--twoLight);
+  }
+  
+  .colour-dark1{
+    background-color: var(--oneDark);
+  }
+  
+  .colour-dark2{
+    background-color: var(--twoDark);
+  }
