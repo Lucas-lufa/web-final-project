@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/site.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="min-h-screen bg-colour-light2 colour-dark2 dark:bg-colour-dark2 dark:colour-light2">
+    <header class="bg-colour-dark1 colour-light1 sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+            <h1 class="text-3xl font-medium">
+                <a href="#Hero">🚧 Lucas Portfolio 🚧</a>
+            </h1>
+            <div>
+                <button id="mobile-nav" class="text-3xl sm:hidden ">&#9776;</button>
+                <nav class="hidden sm:block space-x-6 text-x1" aria-label="main">
+                    <a href="index.html" class="hover:opacity-90">Home</a>
+                    <a href="contact.html" class="hover:opacity-90">Contact</a>
+                    <a href="about.html" class="hover:opacity-90">About</a>
+                    <a href="resume.html" class="hover:opacity-90">Resumé</a>
+                    <a href="project.html" class="hover:opacity-90">Projects</a>
+                    <a href="sample-project.html" class="hover:opacity-90">Sample</a>
+                </nav>
+            </div>
+      </section>
+      <section id="mobile-menu" class="absolute top-0 bg-black w-full text-3xl flex-col justify-content-center origin-top animate-open-menu hidden">
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+            <a href="index.html" class="hover:opacity-90 w-full text-center py-6">Home</a>
+            <a href="contact.html" class="hover:opacity-90 w-full text-center py-6">Contact</a>
+            <a href="about.html" class="hover:opacity-90 w-full text-center py-6">About</a>
+            <a href="resume.html" class="hover:opacity-90 w-full text-center py-6">Resumé</a>
+            <a href="project.html" class="hover:opacity-90 w-full text-center py-6">Projects</a>
+            <a href="sample-project.html" class="hover:opacity-90 w-full text-center py-6">Sample</a>
+        </nav>
+      </section>
+    </header>
+    <main class="max-w-4xl mx-auto min-h-screen">
+        <section id="api-block">
+            <header><h3>API ninja APP</h3></header>
+            <div>
+                <fieldset id='checkboxs'>
+                <legend>Pick a App</legend>
+
+                    <div>
+                        <input type="checkbox" id="recipe" name="recipe" onclick="instructions_recipe()"/>
+                        <label for="recipe" >Recipe</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="convert-currency" name="convert-currency" onclick="instructions_currency()"/>
+                        <label for="convert-currency">Convert Currency</label>
+                    </div>
+                
+                </fieldset>
+            </div>
+            
+            <div >
+                <form action="" method="get" id="form-input-api">
+                    <input type="text" id="api-input" name="api-input">
+                    <button type="submit">Submit</button>
+                    <label for="api-input"></label>
+                </form>
+            </div>
+            <div>
+                <div id="recipe-instructions" style="display: none;" class="main-padding">
+                    <p >Enter a recipe like italian wedding soup into box and submit.</p>
+                    <p id="recipe-api-output" class="main-padding"></p>
+                </div>
+                <div id="convert-currency-instructions" style="display: none;" class="main-padding">
+                    <p id="currency-api-output" class="main-padding"></p>
+                    <p >
+                        Have currency you currently hold. Must be 3-character currency code (e.g. AUD) <br>
+                        Want currency you want to convert to. Must be 3-character currency code (e.g. GBP) <br>
+                        Amount (required) - Amount of currency to convert. </p>
+                        <p>CNY Chinese Yuan. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GBP British Pound.</p>
+                        <p>CHF Swiss Franc. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NZD New Zealand Dollar.</p>
+                        <p>AUD Australian Dollar. KRW	South Korean Won.</p>
+                        <p>PLN Polish Zloty. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DKK Danish Krone.</p>
+                        <p>TRY Turkish New Lira. &nbsp;HKD Hong Kong Dollar.
+                        </p>
+                    </div>
+                </div>
+                <script src="assets/js/api-script.js"></script>
+
+        </section> 
+        
+    </main>
+    <footer class="bg-colour-dark1 colour-light1 sticky bottom-0 hidden sm:block">
+        <div class="max-w-4xl flex justify-center ">
+            <section class="p-4">
+                
+                <p>© Copyright 2024 Lucas Fadersen. <br> All rights reserved.</p>
+            </section>
+            <section class="p-4">
+                <ul>
+                    <li><a href="#">North Metro TAFE</a></li>
+                    <li><a href="#">ScreenCraft Dev Sites</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Copyright</a></li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
