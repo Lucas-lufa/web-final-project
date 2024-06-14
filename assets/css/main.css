@@ -35,17 +35,17 @@
   }
   
   .colour-light1{
-    background-color: var(--oneLight);
+    color: var(--oneLight);
   }
   
   .colour-light2{
-    background-color: var(--twoLight);
+    color: var(--twoLight);
   }
   
   .colour-dark1{
-    background-color: var(--oneDark);
+    color: var(--oneDark);
   }
   
   .colour-dark2{
-    background-color: var(--twoDark);
+    color: var(--twoDark);
   }

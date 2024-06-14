@@ -907,7 +907,7 @@ Temporary Items
 .DS_Store
 .parcel-cache
 tailwind.config.js
-index.html
+# index2.html
 yarn.lock
 yarn-error.log
 types/generated/*.d.ts
